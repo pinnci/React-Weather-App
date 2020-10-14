@@ -1,0 +1,51 @@
+
+.wrapper{
+    h3{
+        color:white;
+        font-weight: 300;
+        text-align: left;
+        margin-top: 3em;
+    }
+
+    .cards .card:first-child{
+        margin-left: 0;
+    }
+    
+    .cards .card:last-child{
+        margin-right: 0;
+    }
+
+    .cards{
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding-bottom: 1em;
+    
+        .card{
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            margin: 0 0.5em;
+            height: 160px;
+            width: 150px;
+            border-radius: .5em;
+        
+            h4{
+                color:white;
+                font-weight: 300;
+            }
+        
+            p{
+                color:white;
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+        
+            .icon,#mist,#clear,#rain,#thunderstorm,#snow{
+                width: 30px;
+            }
+        
+            #rain{
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+html{
+    height: 100%;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    background:url(../src/Img/bg.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    padding: 0;
+    margin:0;
+}
+
+.container{
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 1200px;
+}
+
+/*Error warning*/
+.redPlaceholder::-webkit-input-placeholder {
+    color: red;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:950px){
+    .today{
+        .main{
+            margin-left: 1em;
+        }
+    } 
+}
+
+@media screen and (max-width:850px){
+    .today{
+        .additional{
+            font-size: 70%;
+        }
+        .main{
+            margin-left: 0;
+    
+            .icon,#mist,#clear,#rain,#thunderstorm,#snow,#moon{
+                width: 100px;
+            }
+    
+            .column h1{
+                margin-top: -0.15em;
+                font-size: 3em;
+            }
+
+            .column p{
+                font-size: 1.5em;
+            }
+        }
+    } 
+
+    .heading{
+        h1{
+            font-size: 3em;
+        }
+
+        h2{
+            font-size: 1.5em;
+        }
+    }
+
+    input{
+        padding: .5em;
+        padding-left: 2.5em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #rain{margin-top: 0;}
+
+    .loader{
+        top: 19%;
+        left: 95%;
+    }
+}
+
+@media screen and(max-width:670px){
+    .loader{
+        top: 20%;
+        left: 94%;
+    }
+}
+
+@media screen and(max-width:600px){
+    .today{
+        display: initial;
+        justify-content: left;
+        .main{
+            margin-top:2em;
+            margin-right: 0;
+            justify-content: left;
+            
+            .icon,#mist,#clear,#rain,#thunderstorm,#snow,#moon{
+                width: 80px;
+            }
+
+            #moon{
+                width: 70px;
+            }
+
+            .column h1{
+                font-size: 2em;
+            }
+        }
+    }
+
+    .wrapper h3{
+        margin-top: 2em;
+    }
+
+   .today .additional{
+        width: auto;
+        margin-top: 2em;
+    }
+
+    .heading{
+        h1{
+            font-size: 2.5em;
+        }
+
+        h2{
+            font-size: 1.2em;
+        }
+    }
+
+    .loader{
+        top: 19%;
+        left: 93%;
+    }
+}
+
+@media screen and(max-width:560px){
+    .loader{
+        top: 19%;
+        left: 92%;
+    }
+}
+
+@media screen and (max-width:460px){
+    .loader{
+        top: 19%;
+        left: 90.5%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .today .additional{
+        padding: 1em 2em;
+    }
+
+    #rain{
+        margin-top: 0;
+    }
+
+    .loader{
+        top: 19%;
+        left: 91%;
+    }
+}
+
+@media screen and (max-width:380px){
+    .loader{
+        top: 19%;
+        left: 88%;
+    }
+}

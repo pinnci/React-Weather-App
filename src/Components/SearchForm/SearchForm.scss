@@ -1,0 +1,47 @@
+input{
+    width: 40%;
+    background:url('../../Icons/search-icon.svg') white no-repeat;
+    background-size: 20px;
+    background-position-x: 12px;
+    background-position-y: center;
+    outline: none;
+    padding: .8em;
+    border-radius: 1em;
+    border: none;
+    padding-left: 2.5em;
+    font-size: 1.2em;
+}
+
+h1{
+    color:white;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+/*Loading animation*/
+.loaderWrapper{
+    position: relative;
+}
+
+.loader{
+    position: absolute;
+    top:25%;
+    left: 69%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color:#034f84;
+    animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
